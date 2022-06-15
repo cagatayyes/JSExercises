@@ -1,9 +1,3 @@
-/* 
-A Pure Function is a function (a block of code)
-that always returns the same result if the same arguments are passed.
-It does not depend on any state or data change during a program’s execution.
-Rather, it only depends on its input arguments.
-*/
 function showScope() {
     scope = 'local';
 
@@ -15,3 +9,8 @@ scope = 'global';
 console.log(scope);
 console.log(showScope());
 console.log(scope);
+
+/*
+scope normalde global. ama function'ı çağırınca local'e dönüyor ve öyle kalıyor. 
+bu yüzden her zaman 'var' kullanmalıyız
+ */
